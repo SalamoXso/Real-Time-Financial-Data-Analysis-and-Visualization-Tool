@@ -1,0 +1,3 @@
+API_KEY: "your_development_api_key"
+DATABASE_URI: "postgresql://postgres:HelloHackers1994@***@localhost/CoursesPlatform"
+DEBUG: true

@@ -1,0 +1,8 @@
+pandas
+dask
+httpx
+plotly
+dash
+SQLAlchemy
+psycopg2-binary  # For PostgreSQL
+python-dotenv
