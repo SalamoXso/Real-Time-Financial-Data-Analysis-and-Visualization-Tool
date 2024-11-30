@@ -1,6 +1,6 @@
+import pytest
 import unittest
 import pandas as pd
-from data_processing.process_data import process_data
 from data_processing.utils.data_cleaning import clean_data
 
 class TestDataProcessing(unittest.TestCase):

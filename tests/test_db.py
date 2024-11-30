@@ -1,3 +1,4 @@
+import pytest
 import unittest
 from db.db_setup import engine
 from sqlalchemy.orm import sessionmaker

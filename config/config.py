@@ -19,4 +19,6 @@ class Config:
         return self.settings.get(key, os.getenv(key, default))
 
 # Instantiate the Config class
+
 config = Config(environment=os.getenv('FLASK_ENV', 'development'))
+ALPHA_VANTAGE_API_KEY = config.get('ALPHA_VANTAGE_API_KEY')

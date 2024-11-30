@@ -1,5 +1,6 @@
+import pytest
 import unittest
-from config.config import config
+from config import config
 
 class TestConfig(unittest.TestCase):
     def test_config_loading(self):

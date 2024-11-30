@@ -10,7 +10,9 @@ from dashboard.components.sidebar import Sidebar
 
 app = Dash(__name__, assets_folder='static')
 app.title = 'Real-Time Financial Data Analysis'
-
+def create_app():
+    # app creation logic here
+    pass
 app.layout = html.Div([
     Header(),
     Sidebar(),

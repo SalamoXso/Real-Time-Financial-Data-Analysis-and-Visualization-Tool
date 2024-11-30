@@ -1,5 +1,8 @@
+import pytest
 import unittest
-from dashboard.app import app
+from dashboard.app import create_app
+
+app = create_app()
 
 class TestDashboard(unittest.TestCase):
     def test_app_running(self):

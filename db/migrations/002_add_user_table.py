@@ -1,5 +1,15 @@
 from sqlalchemy import create_engine, Column, Integer, String
 from db.models import Base
+from sqlalchemy.engine import url
+
+# Create a URL for the database connection
+database_url = url.URL(
+    "postgresql",
+    username="postgres",
+    password="HelloHackers1994@*",
+    host="localhost",
+    database="CoursesPlatform"
+)
 
 class User(Base):
     __tablename__ = 'users'
@@ -8,7 +18,7 @@ class User(Base):
     password_hash = Column(String, nullable=False)
 
 # Create a new database engine
-engine = create_engine('postgresql://username:password@localhost/dev_db')
+engine = create_engine(database_url)
 
 # Create the new table
 User.__table__.create(engine)
